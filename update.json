@@ -1,7 +1,7 @@
 {
-  "version": "1.0.2",
-  "installer_url": "https://github.com/artes052-droid/OutlukPanel-Updates/releases/download/v1.0.2/OutlukPanelSetup-1.0.2.exe",
-  "sha256": "62d3d9c5f19305fd393e62a79813acc40abab0be5ca69af08d8bdf90b93fe225",
-  "release_notes": "Outluk Panel 1.0.2: proxy pool GUI (import/clear/count), HTTPS proxy check, classification of Chrome proxy failures (proxy_unstable / timeout / auth / connection) before signup, batch continues after one account proxy failure, and in-app update check.",
+  "version": "1.0.3",
+  "installer_url": "https://github.com/artes052-droid/OutlukPanel-Updates/releases/download/v1.0.3/OutlukPanelSetup-1.0.3.exe",
+  "sha256": "e7bd609aa3ff2a420bf8609a25980259ba86403d27a4c7a1b36987f1fb152951",
+  "release_notes": "Outluk Panel 1.0.3: waiting for SOOP verification email is 60 seconds (EMAIL_WAIT_TIMEOUT_SEC). If IMAP works but no SOOP mail arrives, the account becomes «Письмо не пришло» (email_not_received) and the batch continues. IMAP failures are imap_error. Recheck mail from the context menu without starting a new registration.",
   "mandatory": false
 }
