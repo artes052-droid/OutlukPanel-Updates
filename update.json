@@ -1,7 +1,7 @@
 {
-  "version": "1.0.3",
-  "installer_url": "https://github.com/artes052-droid/OutlukPanel-Updates/releases/download/v1.0.3/OutlukPanelSetup-1.0.3.exe",
-  "sha256": "e7bd609aa3ff2a420bf8609a25980259ba86403d27a4c7a1b36987f1fb152951",
-  "release_notes": "Outluk Panel 1.0.3: waiting for SOOP verification email is 60 seconds (EMAIL_WAIT_TIMEOUT_SEC). If IMAP works but no SOOP mail arrives, the account becomes «Письмо не пришло» (email_not_received) and the batch continues. IMAP failures are imap_error. Recheck mail from the context menu without starting a new registration.",
+  "version": "1.0.4",
+  "installer_url": "https://github.com/artes052-droid/OutlukPanel-Updates/releases/download/v1.0.4/OutlukPanelSetup-1.0.4.exe",
+  "sha256": "e97ec425e98d531805da5a3109b3386629b3caef1db5cd774c5ea92b787d7578",
+  "release_notes": "Outluk Panel 1.0.4: after a successful SOOP signup, a single temporary IMAP/network error (socket timeout, connection reset, IMAP BYE) no longer closes the browser or immediately marks the account NEEDS_REVIEW. Outlook reconnects up to 3 times with a 4-second pause and continues polling the same mailbox. Invalid OAuth/IMAP auth is shown as «Ошибка IMAP (авторизация)». Three failed reconnects become «Ошибка IMAP (сеть)» while credentials and recovery flags are kept, then the batch continues. If IMAP works but no SOOP mail arrives in 60 seconds, the account is still «Письмо не пришло». Closing the browser now logs account, stage, exception class/message, signup_submitted, verification_url_found, and reason_for_context_close.",
   "mandatory": false
 }
