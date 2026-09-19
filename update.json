@@ -1,7 +1,7 @@
 {
   "version": "1.0.4",
   "installer_url": "https://github.com/artes052-droid/OutlukPanel-Updates/releases/download/v1.0.4/OutlukPanelSetup-1.0.4.exe",
-  "sha256": "e97ec425e98d531805da5a3109b3386629b3caef1db5cd774c5ea92b787d7578",
-  "release_notes": "Outluk Panel 1.0.4: after a successful SOOP signup, a single temporary IMAP/network error (socket timeout, connection reset, IMAP BYE) no longer closes the browser or immediately marks the account NEEDS_REVIEW. Outlook reconnects up to 3 times with a 4-second pause and continues polling the same mailbox. Invalid OAuth/IMAP auth is shown as «Ошибка IMAP (авторизация)». Three failed reconnects become «Ошибка IMAP (сеть)» while credentials and recovery flags are kept, then the batch continues. If IMAP works but no SOOP mail arrives in 60 seconds, the account is still «Письмо не пришло». Closing the browser now logs account, stage, exception class/message, signup_submitted, verification_url_found, and reason_for_context_close.",
+  "sha256": "302a7d1f6897e186ba883c9844cebf82d008694af162bcef1179cd06081ef8ff",
+  "release_notes": "Outluk Panel 1.0.4:\n- улучшена стабильность регистрации и proxy failover;\n- Outlook IMAP теперь поддерживает proxy tunnel и mail-proxy failover;\n- исправлено ошибочное распознавание User is authenticated but not connected;\n- исправлен поиск verification email по INTERNALDATE / UID baseline;\n- исправлены transient OAuth/proxy timeout и TLS mail-proxy failures;\n- улучшен pre-submit failover при проблемной SOOP landing page;\n- добавлены группы аккаунтов и перенос между группами;\n- добавлен snapshot TXT-export текущей группы;\n- улучшен recovery незавершённых регистраций;\n- Graph выключен по умолчанию.",
   "mandatory": false
 }
